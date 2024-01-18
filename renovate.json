@@ -3,7 +3,7 @@
       "packageRules": [
         {
             "description": "Only Update package.json",
-            "matchFileNames": ["package.json"],
+            "matchFileNames": ["package.json", "go.mod"],
             "minimumReleaseAge": "3 days"
         }
       ]
