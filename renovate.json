@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+      "packageRules": [
+        {
+            "description": "Only Update package.json",
+            "matchPackagePatterns": ["*"],
+            "matchFileNames": ["package.json", "Dockerfile", "requirements.txt"]
+            "minimumReleaseAge": "3 days"
+        }
+      ]
+}
