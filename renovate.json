@@ -4,7 +4,7 @@
         {
             "description": "Only Update package.json",
             "matchPackagePatterns": ["*"],
-            "matchFileNames": ["package.json", "Dockerfile", "requirements.txt"]
+            "matchFileNames": ["package.json"]
             "minimumReleaseAge": "3 days"
         }
       ]
