@@ -3,7 +3,7 @@
   "extends":[
     "config:base"
   ],
-  "enableManagers":["docker, docker-compose"],
+  "enabledManagers":["docker, docker-compose"],
       "packageRules": [
         {
             "description": "Only Update package.json",
