@@ -6,7 +6,7 @@
       "packageRules": [
         {
             "description": "Only Update package.json",
-            "matchFileNames": ["Dockerfile"]
+            "matchFileNames": ["Dockerfile"],
             "enabled": true
         },
         {   
