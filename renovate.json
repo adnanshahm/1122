@@ -7,6 +7,11 @@
         {
             "description": "Only Update package.json",
             "matchFileNames": ["Dockerfile"]
+        },
+        {   
+            "description": "Disable updates for dockerfiles.",
+            "matchManagers": ["docker-compose", "dockerfile"],
+            "enabled": false
         }
       ]
 }
