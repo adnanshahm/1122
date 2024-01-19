@@ -1,10 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends":[
+    "config:recomended"
+  ]
       "packageRules": [
         {
             "description": "Only Update package.json",
-            "matchFileNames": ["package.json", "go.mod"],
-            "minimumReleaseAge": "3 days"
+            "matchFileNames": ["Dockerfile"]
         }
       ]
 }
