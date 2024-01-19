@@ -1,7 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "docker:enableMajor"], 
-  "enabledManagers": ["gitlabci"],
-  "requiredStatusChecks": null,
-  "packageRules": [{ "updateTypes": ["minor", "patch", "pin", "digest"], "automerge": true }]
+  "extends":[
+    "config:base"
+  ],
+  "enableManagers":["docker, docker-compose"],
+      "packageRules": [
+        {
+            "description": "Only Update package.json",
+            "matchFileNames": ["Dockerfile"],
+            "enabled": true
+        },
+        {   
+            "description": "Disable updates for dockerfiles.",
+            "matchManagers": ["docker-compose", "dockerfile"],
+            "enabled": true
+        }
+      ]
 }
