@@ -1,22 +1,28 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends":[
-    "config:recommended"
-  ],
-  "ignoreDeps": ["node","npm"],
-      "packageRules": [
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends":[
+        "config:recommended",
+        ":disableDependencyDashboard"
+    ],
+    "enabledManagers": ["npm"],
+    "branchPrefix": "feature/",
+    "prHourlyLimit": 5,
+    "baseBranches": ["master"],
+    "packageRules": [
         {
-            "description": "Only Update package.json",
-            "matchFileNames": ["Dockerfile"],
-            "enabled": true
+            "matchPackagePatterns": ["*"],
+            "matchUpdateTypes": ["major"],
+            "minimumReleaseAge": "3 days"
         },
-        {   
-            "description": "Disable updates for dockerfiles.",
-            "matchManagers": ["docker-compose", "dockerfile"],
-            "enabled": true
+        {
+            "matchPackagePatterns": ["*"],
+            "matchUpdateTypes": ["minor"],
+            "minimumReleaseAge": "2 days"
+        },
+        {
+            "matchPackagePatterns": ["*"],
+            "matchUpdateTypes": ["patch"],
+            "minimumReleaseAge": "2 days"
         }
-      ],
-      "ignorePaths": [
-              "Dockerfile"
-  ]
+    ]
 }
