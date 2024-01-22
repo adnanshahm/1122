@@ -16,7 +16,6 @@
         }
       ],
       "ignorePaths": [
-              "Dockerfile",
-              "package.json"
+              "Dockerfile"
   ]
 }
