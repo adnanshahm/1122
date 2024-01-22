@@ -3,6 +3,7 @@
   "extends":[
     "config:recommended"
   ],
+  "ignoreDeps": ["node","npm"],
       "packageRules": [
         {
             "description": "Only Update package.json",
