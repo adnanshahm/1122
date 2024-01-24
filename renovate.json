@@ -1,27 +1,35 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends":[
-        "config:recommended"
-    ],
-    "enabledManagers": ["npm"],
-    "branchPrefix": "feature/",
-    "prHourlyLimit": 5,
-    "baseBranches": ["master"],
-    "packageRules": [
-        {
-            "matchPackagePatterns": ["*"],
-            "matchUpdateTypes": ["major"],
-            "minimumReleaseAge": "3 days"
-        },
-        {
-            "matchPackagePatterns": ["*"],
-            "matchUpdateTypes": ["minor"],
-            "minimumReleaseAge": "2 days"
-        },
-        {
-            "matchPackagePatterns": ["*"],
-            "matchUpdateTypes": ["patch"],
-            "minimumReleaseAge": "2 days"
-        }
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends":[
+      "config:recommended",
+      ":disableDependencyDashboard"
+  ],
+  "enabledManagers": ["npm"],
+  "branchPrefix": "feature/",
+  "prHourlyLimit": 5,
+  "baseBranches": ["develop"],
+  "packageRules": [
+      {
+          "matchPackagePatterns": ["*"],
+          "matchUpdateTypes": ["major"],
+          "minimumReleaseAge": "3 days",
+          "commitMessagePrefix": "chore(deps)",
+          "enabled": true
+      },
+      {
+          "matchPackagePatterns": ["*"],
+          "matchUpdateTypes": ["minor"],
+          "minimumReleaseAge": "2 days",
+          "commitMessagePrefix": "chore(deps)",
+          "enabled": true
+      },
+      {
+          "matchPackagePatterns": ["*"],
+          "matchUpdateTypes": ["patch"],
+          "minimumReleaseAge": "2 days",
+          "commitMessagePrefix": "chore(deps)",
+          "enabled": true
+      }
+  ],
+  "enabled": true
 }
