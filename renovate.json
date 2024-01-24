@@ -14,7 +14,7 @@
           "matchUpdateTypes": ["major"],
           "minimumReleaseAge": "3 days",
           "commitMessagePrefix": "chore(deps)",
-          "enabled": true
+          "enabled": false
       },
       {
           "matchPackagePatterns": ["*"],
