@@ -7,7 +7,7 @@
   "enabledManagers": ["npm"],
   "branchPrefix": "feature/",
   "prHourlyLimit": 5,
-  "baseBranches": ["develop"],
+  "baseBranches": ["master"],
   "packageRules": [
       {
           "matchPackagePatterns": ["*"],
