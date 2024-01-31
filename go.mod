@@ -8,6 +8,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.2.1
 	github.com/tidwall/gjson v1.17.0
 	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
+	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
 	
 )
 require (
