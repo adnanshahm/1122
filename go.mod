@@ -7,6 +7,8 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/resourcemanager/dns/armdns v1.2.0
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.2.1
 	github.com/tidwall/gjson v1.17.0
+	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
+	
 )
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.5.1 // indirect
