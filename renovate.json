@@ -33,7 +33,7 @@
       },
       {
         "matchPackagePatterns": ["github.com/jackc/pgerrcode"],
-        "versioning": "pin"
+        "versioning": "go-mod-directive"
       }
   ],
   "enabled": true
