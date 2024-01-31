@@ -1,2 +1,2 @@
-FROM alpine:3.17
+FROM alpine:a9f83df58a9a5481892157035a39ee1f7d281a4d28ba83a642b2452e2a93447f
 RUN echo "adnan"
