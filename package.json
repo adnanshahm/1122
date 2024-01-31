@@ -35,7 +35,7 @@
     "@next/env": "^14.0.4",
     "@types/uuid": "^9.0.7",
     "antd": "^5.13.1",
-    "apollo-upload-client": "^17.0.0",
+    "apollo-upload-client": "^18.0.0",
     "classnames": "^2.5.1",
     "cryptr": "^6.3.0",
     "dates-range-parser": "^1.0.5",
