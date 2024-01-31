@@ -10,6 +10,7 @@ require (
 	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
 	github.com/sendgrid/sendgrid-go v3.11.1+incompatible
+	github.com/jackc/pgerrcode v0.0.0-20201024163028-a0d42d470451
 	
 )
 require (
