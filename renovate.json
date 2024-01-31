@@ -31,7 +31,7 @@
           "enabled": true
       },
       {
-          "matchPackagePatterns": ["github.com/Masterminds/sprig"],
+          "matchPackagePatterns": ["github.com/go-ozzo/ozzo-validation"],
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
           "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\+(?<compatibility>\\d+)$",
