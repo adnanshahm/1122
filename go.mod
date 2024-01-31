@@ -9,6 +9,7 @@ require (
 	github.com/tidwall/gjson v1.17.0
 	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
+	github.com/sendgrid/sendgrid-go v3.11.1+incompatible
 	
 )
 require (
