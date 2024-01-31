@@ -35,7 +35,7 @@
           "matchUpdateTypes": ["*"],
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
-          "versioning": "regex:^(?<major>\d+)\.(?<minor>\d+)\.(?<pathc>\d+)\+(?<compatibility>\d+)$",
+          "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<pathc>\\d+)\\+(?<compatibility>\\d+)$",
           "enabled": true
       }
   ],
