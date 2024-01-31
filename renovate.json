@@ -29,13 +29,6 @@
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
           "enabled": true
-      },
-      {
-          "matchPackagePatterns": ["github.com/go-ozzo/ozzo-validation"],
-          "minimumReleaseAge": "2 days",
-          "commitMessagePrefix": "chore(deps)",
-          "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\+(?<compatibility>\\d+)$",
-          "enabled": true
       }
   ],
   "enabled": true
