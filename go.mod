@@ -11,6 +11,7 @@ require (
 	github.com/go-ozzo/ozzo-validation v3.6.0+incompatible
 	github.com/sendgrid/sendgrid-go v3.11.1+incompatible
 	github.com/jackc/pgerrcode v0.0.0-20201024163028-a0d42d470451
+	gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637
 	
 )
 require (
