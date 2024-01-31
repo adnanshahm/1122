@@ -5,7 +5,7 @@
   ],
   "enabledManagers": ["npm","gomod"],
   "branchConcurrentLimit": 0,
-  "commitMessageExtra": "from {{currentVersion}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
+  "commitMessageExtra": "from {{#if isPinDigest}}{{currentDigestShort}}{{else}}{{currentVersion}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "branchPrefix": "feature/",
   "prHourlyLimit": 5,
   "baseBranches": ["master"],
