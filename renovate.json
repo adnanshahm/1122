@@ -3,7 +3,7 @@
   "extends":[
       "config:recommended"
   ],
-  "enabledManagers": ["npm","gomod", "Docker"],
+  "enabledManagers": ["npm","gomod", "docker"],
   "branchConcurrentLimit": 0,
   "commitMessageExtra": "from {{#if isPinDigest}}{{currentDigestShort}}{{else}}{{currentVersion}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "branchPrefix": "feature/",
