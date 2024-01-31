@@ -30,6 +30,10 @@
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
           "enabled": true
+      },
+      {
+        "matchPackagePatterns": ["github.com/jackc/pgerrcode"],
+        "versioning": "pin"
       }
   ],
   "enabled": true
