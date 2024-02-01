@@ -40,6 +40,6 @@
     "commands": ["go run --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
     "fileFilters": ["CHANGELOG.md"],
     "executionMode": "update"
-  }
+  },
   "enabled": true
 }
