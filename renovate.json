@@ -9,6 +9,7 @@
   "branchPrefix": "feature/",
   "prHourlyLimit": 5,
   "baseBranches": ["master"],
+  "allowedPostUpgradeCommands": ["go run main.go --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
   "packageRules": [
       {
           "matchPackagePatterns": ["*"],
@@ -24,7 +25,7 @@
           "commitMessagePrefix": "chore(deps)",
           "enabled": true,
             "postUpgradeTasks": {
-                "commands": ["go run --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
+                "commands": ["go run main.go --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
                 "fileFilters": ["CHANGELOG.md"],
                 "executionMode": "update"
        }
