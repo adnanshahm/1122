@@ -7,15 +7,14 @@
   "prConcurrentLimit": 0,
   "enabledManagers": ["npm","gomod", "dockerfile"],
   "branchConcurrentLimit": 0,
-  "commitMessagePrefix": "chore(dep):",
   "commitMessageExtra": "from {{#if isPinDigest}}{{currentDigestShort}}{{else}}{{currentVersion}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "branchPrefix": "feature/",
-  "prHourlyLimit": 5,
   "baseBranches": ["master"],
   "packageRules": [
       {
         "matchDepTypes": ["devDependencies"],
         "matchUpdateTypes": ["patch"],
+        "commitMessagePrefix": "chore(deps)",
         "automerge": true
       },
       {
