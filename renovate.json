@@ -4,6 +4,7 @@
       "config:recommended"
   ],
   "prHourlyLimit": 0,
+  "ignoreTests": true,
   "prConcurrentLimit": 0,
   "enabledManagers": ["npm","gomod", "dockerfile"],
   "separateMinorPatch": true,
@@ -17,7 +18,6 @@
         "matchPackagePatterns": ["*"],
         "matchUpdateTypes": ["minor"],
         "commitMessagePrefix": "chore(deps)",
-        "ignoreTests": true,
         "automerge": true
       },
       {
