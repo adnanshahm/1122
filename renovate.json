@@ -38,8 +38,9 @@
           "enabled": true
       },
       {
-        "matchDepNames": ["github.com/jackc/pgerrcode"],
-        "versioning": "go-mod-directive"
+        "matchDepTypes": [devDependencies],
+        "matchUpdateTypes": ["patch"],
+        "automerge": true
       }
   ],
   "enabled": true
