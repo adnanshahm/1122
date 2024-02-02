@@ -23,19 +23,19 @@
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["major"],
           "enabled": true,
-        "automerge": true
+        "automerge": false
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["minor"],
           "enabled": true,
-        "automerge": true
+        "automerge": false
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["patch"],
           "enabled": true,
-        "automerge": true
+        "automerge": false
       }
   ],
   "enabled": true
