@@ -3,6 +3,9 @@
   "extends":[
       "config:recommended"
   ],
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+
   "enabledManagers": ["npm","gomod", "dockerfile"],
   "branchConcurrentLimit": 0,
   "commitMessagePrefix": "chore(dep):",
@@ -11,6 +14,11 @@
   "prHourlyLimit": 5,
   "baseBranches": ["master"],
   "packageRules": [
+      {
+        "matchDepTypes": ["devDependencies"],
+        "matchUpdateTypes": ["patch"],
+        "automerge": true
+      },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["major"],
@@ -31,11 +39,6 @@
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
           "enabled": true
-      },
-      {
-        "matchDepTypes": ["devDependencies"],
-        "matchUpdateTypes": ["patch"],
-        "automerge": true
       }
   ],
   "enabled": true
