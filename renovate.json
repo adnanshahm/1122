@@ -22,12 +22,7 @@
           "matchUpdateTypes": ["minor"],
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
-          "enabled": true,
-            "postUpgradeTasks": {
-                "commands": ["go run main.go --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
-                "fileFilters": ["CHANGELOG.md"],
-                "executionMode": "update"
-       }
+          "enabled": true
       },
       {
           "matchPackagePatterns": ["*"],
