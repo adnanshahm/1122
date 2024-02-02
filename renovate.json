@@ -11,7 +11,6 @@
   "branchConcurrentLimit": 0,
   "commitMessageExtra": "from {{#if isPinDigest}}{{currentDigestShort}}{{else}}{{currentVersion}}{{/if}} to {{#if isPinDigest}}{{{newDigestShort}}}{{else}}{{#if isMajor}}{{prettyNewMajor}}{{else}}{{#if isSingleVersion}}{{prettyNewVersion}}{{else}}{{#if newValue}}{{{newValue}}}{{else}}{{{newDigestShort}}}{{/if}}{{/if}}{{/if}}{{/if}}",
   "branchPrefix": "feature/",
-  "commitMessagePrefix": "chore(deps):",
   "baseBranches": ["master"],
   "packageRules": [
       {
@@ -23,24 +22,18 @@
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["major"],
-          "minimumReleaseAge": "3 days",
-          "commitMessagePrefix": "chore(deps)",
           "enabled": true,
         "automerge": true
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["minor"],
-          "minimumReleaseAge": "2 days",
-          "commitMessagePrefix": "chore(deps)",
           "enabled": true,
         "automerge": true
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["patch"],
-          "minimumReleaseAge": "2 days",
-          "commitMessagePrefix": "chore(deps)",
           "enabled": true,
         "automerge": true
       }
