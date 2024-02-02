@@ -17,6 +17,7 @@
         "matchPackagePatterns": ["*"],
         "matchUpdateTypes": ["minor"],
         "commitMessagePrefix": "chore(deps)",
+        "ignoreTests": true,
         "automerge": true
       },
       {
