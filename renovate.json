@@ -15,7 +15,7 @@
       {
         "matchDepTypes": ["devDependencies"],
         "matchPackagePatterns": ["*"],
-        "matchUpdateTypes": ["patch"],
+        "matchUpdateTypes": ["minor"],
         "commitMessagePrefix": "chore(deps)",
         "automerge": true
       },
@@ -24,21 +24,24 @@
           "matchUpdateTypes": ["major"],
           "minimumReleaseAge": "3 days",
           "commitMessagePrefix": "chore(deps)",
-          "enabled": true
+          "enabled": true,
+        "automerge": true
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["minor"],
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
-          "enabled": true
+          "enabled": true,
+        "automerge": true
       },
       {
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["patch"],
           "minimumReleaseAge": "2 days",
           "commitMessagePrefix": "chore(deps)",
-          "enabled": true
+          "enabled": true,
+        "automerge": true
       }
   ],
   "enabled": true
