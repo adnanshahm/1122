@@ -17,7 +17,7 @@
         "matchDepTypes": ["devDependencies"],
         "matchPackagePatterns": ["*"],
         "matchUpdateTypes": ["minor"],
-        "commitMessagePrefix": "chore(deps)",
+        "commitMessagePrefix": "chore(deps):",
         "automerge": true
       },
       {
