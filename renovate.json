@@ -6,7 +6,6 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "separateMinorPatch": true,
-
   "enabledManagers": ["npm","gomod", "dockerfile"],
   "branchConcurrentLimit": 0,
   "commitMessagePrefix": "chore(dep):",
@@ -18,7 +17,6 @@
       {
         "matchDepTypes": ["devDependencies"],
         "matchUpdateTypes": ["patch"],
-        "separateMinorPatch": true,
         "automerge": true
       },
       {
