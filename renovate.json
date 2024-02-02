@@ -38,7 +38,7 @@
           "enabled": true
       },
       {
-        "matchDepTypes": [devDependencies],
+        "matchDepTypes": ["devDependencies"],
         "matchUpdateTypes": ["patch"],
         "automerge": true
       }
