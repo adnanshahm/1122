@@ -17,6 +17,7 @@
       {
         "matchDepTypes": ["devDependencies"],
         "matchUpdateTypes": ["patch"],
+        "separateMinorPatch": true,
         "automerge": true
       },
       {
