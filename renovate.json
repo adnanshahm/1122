@@ -9,7 +9,6 @@
   "branchPrefix": "feature/",
   "prHourlyLimit": 5,
   "baseBranches": ["master"],
-  "allowedPostUpgradeCommands": ["go run main.go --msg \"{{{depName}}} from {{{currentVersion}}} to {{{newVersion}}}\""],
   "packageRules": [
       {
           "matchPackagePatterns": ["*"],
