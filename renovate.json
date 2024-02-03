@@ -16,7 +16,7 @@
     "commands": ["sh script.sh"],
     "fileFilters": ["script.sh"],
     "executionMode": "update"
-  }
+  },
   "packageRules": [
       {
         "matchDepTypes": ["devDependencies"],
