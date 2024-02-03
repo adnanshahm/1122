@@ -14,7 +14,7 @@
   "baseBranches": ["master"],
   "postUpgradeTasks": {
     "commands": ["sh script.sh"],
-    "fileFilters": ["script.sh"],
+    "fileFilters": ["CHANGELOG.md"],
     "executionMode": "update"
   },
   "packageRules": [
