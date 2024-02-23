@@ -34,7 +34,8 @@
           "matchPackagePatterns": ["*"],
           "matchUpdateTypes": ["minor"],
           "enabled": true,
-        "automerge": false
+        "automerge": false,
+        "automergeStrategy": "squash"
       },
       {
           "matchPackagePatterns": ["*"],
